@@ -1,0 +1,77 @@
+@font-face {
+    font-family: 'Cafe24Oneprettynight';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.1/Cafe24Oneprettynight.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+body{ 
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    position: relative;
+    /* background-image: url("../images/backImg1.jpg"); */
+}
+.wrapper{ 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.clock .timer { 
+    font-family: "Roboto", sans-serif;
+    font-size: 11.5vw;
+    font-weight: 700;
+    color: #fff;
+    text-align: center;
+}
+.todoform{ 
+    width: 100%;
+}
+.todoform input { 
+    width: 100%;
+    border: none;
+    border-bottom: 3px solid #fff;
+    background: transparent;
+    padding:0.6vw 0;
+}
+.todoform input,
+.todoform input::placeholder{ 
+    color: #fff;
+    font: 18px;
+}
+
+.todoform input:focus{ 
+    outline: none;
+}
+
+.todolist{ 
+    width: 100%;
+    margin-top: 10px;
+    background: #f9f9f9;
+}
+
+.todolist li.list-item{ 
+    padding: 14px 0;
+    border-bottom: 1px solid #ddd;
+}
+.todolist input{ 
+    margin: 0 15px;
+}
+.todolist label { 
+    padding: 14px 15px;
+    border-left: 2px solid #d1e2ff;
+}
+.todolist input:checked + label span.label-text { 
+    text-decoration: line-through;
+}
+.todolist label span.label-text { 
+    font-family: 'Cafe24Oneprettynight';
+    font-size: 21px;
+}
+.todolist button{ 
+    float: right;
+    margin-right: 15px;
+}
